@@ -1,3 +1,7 @@
+<<<<<<< HEAD
 Amrin Aryono
 
 aku sudah mengisi file about dengan nama ku loh
+=======
+nama saya amrin aryono
+>>>>>>> ce372a8d62505a18a012a02337ed5ba10fd6da54
