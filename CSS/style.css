@@ -1,0 +1,100 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+body{
+    background-color: #f3f4f5;   
+}
+.container{
+    width: 100vw;
+    max-width: 800px;
+    padding: 2em 1.5em;
+    background-color: #ffffff;
+    margin: 1em auto;
+    border-radius: 0.5em;
+}
+.tombolHapus{
+    background-color: rgb(156, 50, 50);
+    color: #fff;
+    border-radius: 3px;
+    padding: 6px;
+    cursor: pointer;
+}
+.tombolUbah{
+    margin-right: 2px;
+    background-color: rgb(28, 161, 112);
+    color: #fff;
+    border-radius: 3px;
+    padding: 6px;
+    cursor: pointer;
+}
+
+h3{
+    font-size: 1.5em;
+    padding: 0.3em;
+    text-align: center;
+    background-color: #6e88d6;
+    color: #ffffff;
+    border-radius: 0.2em;
+}
+.input-section{
+    margin: 0.5em 0;
+}
+label{
+    display: block;
+    font-size: 1em;
+    margin-bottom: 0.5em;
+    margin-top: 0.5em;
+}
+table {
+    width: 100%;
+    border: 1px solid #ddd;
+    border-collapse: collapse;
+}
+th, td{
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-collapse: collapse;
+}
+input, select, textarea{
+    display: block;
+    outline: none;
+    width: 100%;
+    padding: 0.5em;
+    border-radius: 0.3em;
+}
+input{
+    border: 1.5px solid #d0d0d0;
+    padding: 1em 0.5em;
+}
+.check-box input{
+    width: 20px;
+    padding: 15px;
+    float: left;
+}
+.radioButton input{
+    width: 20px;
+    padding: 15px;
+    float: left;
+}
+.required-color{
+    color: red;
+}
+button{
+    margin-top: 1em;
+    width: 20%;
+    padding: 0.5em;
+    border-radius: 0.3em;
+}
+.right{
+    background-color: #264ec6;
+    border: 0;
+    color: #ffffff;
+}
+.left{
+    background-color: #c69926;
+    border: 0;
+    color: #ffffff;
+}

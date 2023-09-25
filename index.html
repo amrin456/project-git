@@ -1,0 +1,92 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="CSS/style.css" />
+    <title>Form Pendaftaran</title>
+  </head>
+  <body>
+    <div class="container">
+      <form id="form">
+        <h3>Form Pendaftaran</h3>
+        <input type="hidden" name="id" id="id" />
+        <div class="input-selection">
+          <label>Nama Lengkap <span class="required-color">*</span></label>
+          <input
+            type="text"
+            placeholder="Masukan Nama Lengkap"
+            name="namaLengkap"
+            id="namaLengkap"
+            required
+          />
+        </div>
+        <div class="input-selection">
+          <label>Tempat Lahir <span class="required-color">*</span></label>
+          <input
+            type="text"
+            placeholder="Masukan Tempat Lahir"
+            name="tempatLahir"
+            id="tempatLahir"
+            required
+          />
+        </div>
+        <div class="input-selection">
+          <label>Tanggal Lahir <span class="required-color">*</span></label>
+          <input type="date" name="tanggalLahir" id="tanggalLahir" required/>
+        </div>
+        <div class="input-selection">
+          <label>Jenis Kelamin <span class="required-color">*</span></label>
+          <div class="radioButton">
+            <input
+              class="radio"
+              type="radio"
+              name="jenisKelamin"
+              id="jenisKelamin"
+              value="Laki-laki"
+              required
+            />
+            <label>Laki-laki</label>
+            <input
+              type="radio"
+              class="radio"
+              name="jenisKelamin"
+              id="jenisKelamin"
+              value="Perempuan"
+              required
+            />
+            <label>Perempuan</label>
+          </div>
+        </div>
+        <div class="input-selection">
+          <label>Agama <span class="required-color">*</span></label>
+          <select name="agama" id="agama">
+            <option value="null" selected>Pilih Agama</option>
+            <option value="islam">Islam</option>
+            <option value="Hindu">Hindu</option>
+            <option value="kristen">Keristen</option>
+            <option value="lainnya">Lainnya</option>
+          </select>
+        </div>
+        <button class="reset left" type="reset">Kosongkan</button>
+        <button class="simpan right" onclick="simpanData()">Simpan</button>
+      </form>
+    </div>
+    <div class="container">
+      <table id="datatable" class="table">
+        <thead>
+          <tr>
+            <th>No</th>
+            <th>Nama</th>
+            <th>Tanggal Lahir</th>
+            <th>Jenis Kelamin</th>
+            <th>Agama</th>
+            <th width="20%">Aksi</th>
+          </tr>
+        </thead>
+        <tbody id="tabelData"></tbody>
+      </table>
+    </div>
+    <script src="JS/ProsesData.js"></script>
+    <script src="JS/TampilData.js"></script>
+  </body>
+</html>
